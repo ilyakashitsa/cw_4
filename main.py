@@ -25,7 +25,6 @@ def user_interaction():
     vacancy_hh = HeadHunterRuAPI()
     all_vacancy = vacancy_hh.getting_vacancies(name_vacancy)
 
-    # Фильтрация вакансий по валюте RUR (т.к ищем в России)
     all_vacancy = [vacancy for vacancy in all_vacancy.get('items') if get_value(vacancy, 'salary', 'currency') == 'RUR']
 
     if len(all_vacancy) == 0:
