@@ -40,6 +40,9 @@ class SaveJson(WorkingWithAFile):
     def del_vacancies(self):
         pass
 
+    def save(self):
+        pass
+
 
 class SaveTxt(WorkingWithAFile):
     """

@@ -79,6 +79,7 @@ def user_interaction():
         save_json = SaveJson('vacancies.json')
 
         save_json.add_vacancy(good_vacancy)
+        save_json.save()
 
         print(good_vacancy)
 
